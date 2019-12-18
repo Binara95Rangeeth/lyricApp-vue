@@ -26,7 +26,7 @@ export default {
         margin: 0 auto;
         margin-top: 10px;
         padding: 10px;
-        min-width: 380px;
+        width: 380px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 10px;
         background-color: #faebd7b9; 
