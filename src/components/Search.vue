@@ -60,14 +60,14 @@ export default {
             this.notFound = false;
         },
         checkNotFound(){
-            if(this.sendpara.artist.length > 0 && this.sendpara.artist.length > 0 && this.recievedata == ""){
+            if((this.sendpara.artist.length > 0 || this.sendpara.artist.length > 0) && this.recievedata == ""){
                 this.notFound = true
             }
         },
         search(){
             if(this.sendpara.track == "asd"){this.sendpara.track=""}
             this.loading = true
-            axios.post('http://localhost:4000/searchlyric',this.sendpara)
+            axios.post('https://sleepy-meadow-93949.herokuapp.com/searchlyric',this.sendpara)
             .then((response)=>{
                 this.recievedata = response.data
                 this.$emit("myevent", this.recievedata)
