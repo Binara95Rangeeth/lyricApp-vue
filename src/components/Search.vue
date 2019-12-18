@@ -88,7 +88,7 @@ export default {
     div.container{
         padding: 15px;
         margin-top: 10px;
-        max-width: 400px;
+        min-width: 380px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 10px;
         background-color: #faebd7b9;
