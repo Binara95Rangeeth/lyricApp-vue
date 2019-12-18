@@ -64,6 +64,7 @@ export default {
                 this.notFound = true
             }
         },
+        
         search(){
             if(this.sendpara.track == "asd"){this.sendpara.track=""}
             this.loading = true
