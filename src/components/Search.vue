@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="width: fit-content; margin: 0 auto;">
     <div class="container" >
         <div class="logo">
             <P>Lyrics</P>
@@ -64,7 +64,7 @@ export default {
                 this.notFound = true
             }
         },
-        
+
         search(){
             if(this.sendpara.track == "asd"){this.sendpara.track=""}
             this.loading = true
